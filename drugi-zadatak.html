@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Drugi domaci</title>
+</head>
+<body>  
+<div id="prvaTri" >
+    <div id="prvi" >
+        <a href="">prvi  prvog</a>
+        <a href="">drugi  prvog</a>
+        <a href="">treci  prvog</a>
+        <a href="">cetvrti  prvog</a>
+        <a href="">peti  prvog</a>
+
+    </div>
+    <div id="drugi">
+        <a href="">prvi  drugog</a>
+        <a href="">drugi  drugog</a>
+        <a href="">treci  drugog</a>
+        <a href="">cetvrti  drugog</a>
+        <a href="">peti  drugog</a>
+    </div>
+    <div id="treci">
+        <a href="">prvi  treceg</a>
+        <a href="">drugi  treceg</a>
+        <a href="">treci  treceg</a>
+        <a href="">cetvrti  treceg</a>
+        <a href="">peti  treceg</a>
+    </div>
+</div>
+<div id="drugaTri">
+    <div id="cetvrti">
+        <a href="">prvi  cetvrtog</a>
+        <a href="">drugi  cetvrtog</a>
+        <a href="">treci  cetvrtog</a>
+        <a href="">cetvrti  cetvrtog</a>
+        <a href="">peti  cetvrtog</a>
+    </div>
+    <div id="peti">
+        <a href="">prvi  petog</a>
+        <a href="">drugi  petog</a>
+        <a href="">treci  petog</a>
+        <a href="">cetvrti  petog</a>
+        <a href="">peti  petog</a>
+    </div>
+    <div id="sesti">
+        <a href="">prvi  sestog</a>
+        <a href="">drugi  sestog</a>
+        <a href="">treci  sestog</a>
+        <a href="">cetvrti  sestog</a>
+        <a href="">peti  sestog</a>
+    </div>
+</div>
+</body>
+<style>
+    #prvaTri{display: flex; }
+    #drugaTri{display: grid; grid-auto-flow: column; grid-template-columns: 20% auto 30%;}
+
+    #prvi{
+    flex: 1;
+    display: flex;
+    padding: 10px;
+        justify-content: flex-start;
+}
+    #drugi{
+    flex: 1;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#treci{
+    flex:1;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+}
+#cetvrti{
+    display: grid;
+    padding: 10px;
+    justify-content: start;
+}
+
+#peti{
+    display: grid;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+#sesti{
+    display: grid;
+    padding: 10px;
+    justify-content: end;
+}
+
+
+a{
+    padding: 10px;
+    color: white;
+}
+html,body{
+    background-color: grey;
+}
+
+@media (max-width: 1150px) {
+  #prvaTri{
+      flex-flow: column;
+  }
+  #drugaTri{
+      grid-auto-flow: row;
+  }
+}
+
+</style>
+</html>
